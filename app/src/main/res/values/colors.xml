@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color> <!-- Updated: Dark black color -->
+    <color name="white">#A09B9B</color> <!-- Updated: Pure white color -->
+    <color name="primary_color">#673AB7</color> <!-- Updated: Material blue color -->
+    <color name="background_color">#ECEFF1</color> <!-- Updated: Light blue-gray background color -->
+    <color name="text_color">#212121</color> <!-- Updated: Dark text color for better readability -->
+    <color name="paper_color">#FFFFF5</color> <!-- Light yellowish color for paper -->
+    <color name="paper_border_color">#D2B48C</color> <!-- Darker color for paper border -->
+
+</resources>

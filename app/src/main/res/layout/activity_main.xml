@@ -1,0 +1,88 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper_background"
+    tools:context=".MainActivity">
+    <!-- Your layout content goes here -->
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Do List"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Task Input -->
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your task here..."
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:background="@drawable/edittext_bg"
+        android:textColor="@color/text_color" />
+
+    <!-- Priority Spinner -->
+    <Spinner
+        android:id="@+id/spinnerPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTask"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_bg"
+        android:padding="12dp"
+        android:textColor="@color/text_color"
+        android:entries="@array/priorities" />
+
+    <!-- Due Date Input -->
+    <EditText
+        android:id="@+id/editTextDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date"
+        android:inputType="datetime"
+        android:maxLines="1"
+        android:layout_below="@id/spinnerPriority"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@drawable/edittext_bg"
+        android:textColor="@color/text_color" />
+
+    <!-- Add Task Button -->
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ADDTASK"
+        android:layout_below="@id/editTextDueDate"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="24dp"
+        android:gravity="center" />
+
+    <!-- Task List -->
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddTask"
+        android:layout_marginTop="24dp"
+        android:divider="@null"
+        android:background="@drawable/listview_bg" />
+
+</RelativeLayout>
